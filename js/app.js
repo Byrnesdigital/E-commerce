@@ -27,21 +27,36 @@ function generateRandomString(length) {
     return text;
   };
 
+
+var getParamsURL = function () {
+    var hashParams = {};
+    var e, r = /([^&;=]+)=?([^&;]*)/g,
+        q = window.location.hash.substring(1);
+    while (e = r.exec(q)) {
+       hashParams[e[1]] = decodeURIComponent(e[2]);
+    }
+    return hashParams;
+}
+
 var authenticationAPI = function(){
-  var state = generateRandomString(10);
-  var scope = 'user-read-private user-read-email';
-  var url = 'https://accounts.spotify.com/authorize';
-  url += '?response_type=token';
-  url += '&client_id=' + encodeURIComponent(client_id);
-  url += '&scope=' + encodeURIComponent(scope);
-  url += '&redirect_uri=' + encodeURIComponent(redirect_uri);
-  url += '&state=' + encodeURIComponent(state);
-  window.location = url;
+      var state = generateRandomString(10);
+      var scope = 'user-read-private user-read-email';
+      var url = 'https://accounts.spotify.com/authorize';
+      url += '?response_type=token';
+      url += '&client_id=' + encodeURIComponent(client_id);
+      url += '&scope=' + encodeURIComponent(scope);
+      url += '&redirect_uri=' + encodeURIComponent(redirect_uri);
+      url += '&state=' + encodeURIComponent(state);
+      window.location = url;
 
 };
 
 
 document.addEventListener("DOMContentLoaded",function(event){//Una vez la página ha cargado.
+
+  var params = getParamsURL();
+  var access_token = params.access_token;
+  
   if(!access_token){
     authenticationAPI();
   }
