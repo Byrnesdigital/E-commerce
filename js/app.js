@@ -1,5 +1,5 @@
 const redirect_uri = "localhost";
-const client_secret = "392bb5afc14245bea352a6dd2258f44d";
+const client_secret = "";
 const client_id = "49c21ca8c1754ea7800c50be00dae758";
 
 
