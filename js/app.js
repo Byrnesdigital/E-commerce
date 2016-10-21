@@ -46,6 +46,8 @@ document.addEventListener("DOMContentLoaded",function(event){//Una vez la págin
     authenticationAPI();
   }
 
+  console.log(access_token)
+
 });
 
 /*
