@@ -1,113 +1,185 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Tienda Virtual de Música</title>
-  <link rel="stylesheet" href="./css/bootstrap.min.css" >
-  <link rel="stylesheet" href="./css/main.css" >
-  <script src="./js/jquery.min.js"> </script>
-  <script src="./js/bootstrap.min.js"> </script>
-  <script src="./js/main.js"> </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tienda Virtual de Música</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <script src="./js/jquery.min.js">
+    </script>
+    <script src="./js/bootstrap.min.js">
+    </script>
+    <script src="./js/main.js">
+    </script>
 </head>
+
 <body>
-<header>
-  <h1>LISTADO DE MÚSICA</h1>
-</header>
-<ul class="nav nav-tabs">
-  <li><a href="">Home</a></li>
-  <li class="dropdown">
-    <a href="#" class="dropdown-toggle"
-      data-toggle="dropdown" role="button">Artists
+    <header>
+        <h1>LISTADO DE MÚSICA</h1>
+    </header>
+    <ul class="nav nav-tabs">
+        <li><a href="">Home</a></li>
+        <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Artists
     <span class="glyphicon glyphicon-menu-down"></span>
     </a>
-    <ul class="dropdown-menu">
-      <li><a href="#">Shakira</a></li>
-      <li><a href="#">Adele</a></li>
-      <li><a href="#">Madonna</a></li>
-      <li role="separator" class="divider"></li>
-      <li><a href="#">Justin Timberlake</a></li>
-      <li><a href="#">Bruno Mars</a></li>
-      <li><a href="#">Michael Jackson</a></li>
+            <ul class="dropdown-menu">
+                <li><a href="#">Shakira</a></li>
+                <li><a href="#">Adele</a></li>
+                <li><a href="#">Madonna</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Justin Timberlake</a></li>
+                <li><a href="#">Bruno Mars</a></li>
+                <li><a href="#">Michael Jackson</a></li>
+            </ul>
+        </li>
+        <li><a href="">Shopping Cart</a></li>
+        <li><a href="">About Us</a></li>
+        <li><a href="">Contact</a></li>
+        <li><a href="#" data-toggle="modal" data-target="#login_modal"> Login </a> </li>
+        <li><a href="#"> Register </a></li>
     </ul>
-  </li>
-  <li><a href="">Shopping Cart</a></li>
-  <li><a href="">About Us</a></li>
-  <li><a href="">Contact</a></li>
-  <li><a href="#" data-toggle ="modal" data-target="#login_modal"> Login </a> </li>
-  <li><a href="#"> Register </a></li>
-</ul>
-<div class="container">
-  <div class="col-lg-12">
-    <h1 class="page-header"> Music Gallery</h1>
-  </div>
-  <div class="row">
-    <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-      <a href="#" class="thumbnail">
-        <img src="./images/imagen1.jpeg" alt="" class="img-responsive">
-      </a>
-      <p align="center" style="line-height= 10%">Miguel Bosé</p>
-      <p align="center" style="line-height= 10%">MTV Unplugged</p>
-      <p align="center" style="line-height= 10%">Nueva Entrada</p>     
-    </div>
-    <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-      <a href="#" class="thumbnail">
-        <img src="http://placehold.it/400x300" alt="" class="img-responsive">
-      </a>
-    </div>
-    <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-      <a href="#" class="thumbnail">
-        <img src="http://placehold.it/400x300" alt="" class="img-responsive">
-      </a>
-    </div>
-    <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-      <a href="#" class="thumbnail">
-        <img src="http://placehold.it/400x300" alt="" class="img-responsive">
-      </a>
-    </div>
-    <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-      <a href="#" class="thumbnail">
-        <img src="http://placehold.it/400x300" alt="" class="img-responsive">
-      </a>
-    </div>
-    <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-      <a href="#" class="thumbnail">
-        <img src="http://placehold.it/400x300" alt="" class="img-responsive">
-      </a>
-    </div>
-    <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-      <a href="#" class="thumbnail">
-        <img src="http://placehold.it/400x300" alt="" class="img-responsive">
-      </a>
-    </div>
-    <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-      <a href="#" class="thumbnail">
-        <img src="http://placehold.it/400x300" alt="" class="img-responsive">
-      </a>
-    </div>
-    <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-      <a href="#" class="thumbnail">
-        <img src="http://placehold.it/400x300" alt="" class="img-responsive">
-      </a>
-    </div>
-    <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-      <a href="#" class="thumbnail">
-        <img src="http://placehold.it/400x300" alt="" class="img-responsive">
-      </a>
-    </div>
-    <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-      <a href="#" class="thumbnail">
-        <img src="http://placehold.it/400x300" alt="" class="img-responsive">
-      </a>
-    </div>
-    <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-      <a href="#" class="thumbnail">
-        <img src="http://placehold.it/400x300" alt="" class="img-responsive">
-      </a>
-    </div>
-  </div>
+    <div class="container">
+        <div class="col-lg-12">
+            <h1 class="page-header"> Music Gallery</h1>
+        </div>
+        <div class="row" style="margin-bottom: 20px">
+          <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+          </div>
+          <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+            <button id="alph-order-button" type="button" class="btn btn-primary btn-lg btn-block"> Order Alphabetic</button>
+          </div>
+          <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+            <button id="num-order-button" type="button" class="btn btn-primary btn-lg btn-block">Order Numeric</button>
+          </div>
+        </div>
+        <div class="row" id="artist-gallery">
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb artist-mini">
+                <a href="http://miguelbose.com/" class="thumbnail">
+                    <img src="./images/imagen1.jpeg" alt="" class="img-responsive">
+                </a>
+                <p align="center" style="line-height= 10%" class="artist-mini-name">Miguel Bosé</p>
+                <p align="center" style="line-height= 10%">MTV Unplugged</p>
+                <p align="center" style="line-height= 10%">Nueva Entrada</p>
+                <p align="center" style="line-height= 10%">1 sem. lista</p>
+                <p align="center" style="line-height= 10%" class="aritst-mini-position">1 Casilla</p>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb artist-mini">
+                <a href="http://www.danimartin.com.es/" class="thumbnail">
+                    <img src="./images/imagen2.jpeg" alt="" class="img-responsive">
+                </a>
+                <p align="center" style="line-height= 10%" class="artist-mini-name">Dani Martin</p>
+                <p align="center" style="line-height= 10%">La Montaña Rusa</p>
+                <p align="center" style="line-height= 10%">Pos. Max 1</p>
+                <p align="center" style="line-height= 10%">3 sem. lista</p>
+                <p align="center" style="line-height= 10%" class="aritst-mini-position">2 Casilla</p>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb artist-mini">
+                <a href="http://gratisdiscos.com/pop/jose-maria-ruiz-no-te-pido-mas-2016-320kbps-2.html" class="thumbnail">
+                    <img src="./images/imagen3.jpeg" alt="" class="img-responsive">
+                </a>
+                <p align="center" style="line-height= 10%" class="artist-mini-name">José María Ruiz</p>
+                <p align="center" style="line-height= 10%">No te pido más</p>
+                <p align="center" style="line-height= 10%">Nueva Entrada</p>
+                <p align="center" style="line-height= 10%">1 sem. lista</p>
+                <p align="center" style="line-height= 10%" class="aritst-mini-position">3 Casilla</p>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb artist-mini">
+                <a href="https://www.abrahammateoofficial.com/2015/10/22/reserva-ya-are-you-ready-el-proximo-album-de-abraham-mateo/" class="thumbnail">
+                    <img src="./images/imagen4.jpeg" alt="" class="img-responsive">
+                </a>
+                <p align="center" style="line-height= 10%" class="artist-mini-name">Abraham Mateo</p>
+                <p align="center" style="line-height= 10%">Are you Ready?</p>
+                <p align="center" style="line-height= 10%">Pos. Max 3</p>
+                <p align="center" style="line-height= 10%">31 sem. lista</p>
+                <p align="center" style="line-height= 10%" class="aritst-mini-position">4 Casilla</p>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb artist-mini">
+                <a href="https://es-la.facebook.com/KaseOficial/" class="thumbnail">
+                    <img src="./images/imagen5.jpeg" alt="" class="img-responsive">
+                </a>
+                <p align="center" style="line-height= 10%" class="artist-mini-name">Kase.O</p>
+                <p align="center" style="line-height= 10%">El cìrculo</p>
+                <p align="center" style="line-height= 10%">Pos Max. 2</p>
+                <p align="center" style="line-height= 10%">3 sem. lista</p>
+                <p align="center" style="line-height= 10%" class="aritst-mini-position">5 Casilla</p>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb artist-mini">
+                <a href="http://store.greenday.com/" class="thumbnail">
+                    <img src="./images/imagen6.jpeg" alt="" class="img-responsive">
+                </a>
+                <p align="center" style="line-height= 10%" class="artist-mini-name">Green Day</p>
+                <p align="center" style="line-height= 10%">Revolution Radio</p>
+                <p align="center" style="line-height= 10%">Nueva Entrada</p>
+                <p align="center" style="line-height= 10%">1 sem. lista</p>
+                <p align="center" style="line-height= 10%" class="aritst-mini-position">6 Casilla</p>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb artist-mini">
+                <a href="https://twitter.com/gemeliersmusic?lang=es" class="thumbnail">
+                    <img src="./images/imagen7.jpeg" alt="" class="img-responsive">
+                </a>
+                <p align="center" style="line-height= 10%" class="artist-mini-name">Gemeliers</p>
+                <p align="center" style="line-height= 10%">Gracias</p>
+                <p align="center" style="line-height= 10%">Pos. Max 1</p>
+                <p align="center" style="line-height= 10%">4 sem. lista</p>
+                <p align="center" style="line-height= 10%" class="aritst-mini-position">7 Casilla</p>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb artist-mini">
+                <a href="http://www.m-clan.tv/" class="thumbnail">
+                    <img src="./images/imagen8.jpeg" alt="" class="img-responsive">
+                </a>
+                <p align="center" style="line-height= 10%" class="artist-mini-name">M Clan</p>
+                <p align="center" style="line-height= 10%">Delta</p>
+                <p align="center" style="line-height= 10%">Pos. Max 2</p>
+                <p align="center" style="line-height= 10%">2 sem. lista</p>
+                <p align="center" style="line-height= 10%" class="aritst-mini-position">8 Casilla</p>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb artist-mini">
+                <a href="http://brucespringsteen.net/news/2016/companion-album-to-bruce-springsteens-autobiography-includes-5-unreleased-tracks" class="thumbnail">
+                    <img src="./images/imagen9.jpeg" alt="" class="img-responsive">
+                </a>
+                <p align="center" style="line-height= 10%" class="artist-mini-name">Bruce Springsteen</p>
+                <p align="center" style="line-height= 10%">Chapter and Verse</p>
+                <p align="center" style="line-height= 10%">Pos. Max 2</p>
+                <p align="center" style="line-height= 10%">2 sem. lista</p>
+                <p align="center" style="line-height= 10%" class="aritst-mini-position">9 Casilla</p>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb artist-mini">
+                <a href="http://www.vanmorrison.com/splash/" class="thumbnail">
+                    <img src="./images/imagen10.jpeg" alt="" class="img-responsive">
+                </a>
+                <p align="center" style="line-height= 10%" class="artist-mini-name">Van Morrison</p>
+                <p align="center" style="line-height= 10%">Keep me singing</p>
+                <p align="center" style="line-height= 10%">Pos. Max 5</p>
+                <p align="center" style="line-height= 10%">2 sem. lista</p>
+                <p align="center" style="line-height= 10%" class="aritst-mini-position">10 Casilla</p>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb artist-mini">
+                <a href="http://www.manuelcarrasco.es/" class="thumbnail">
+                    <img src="./images/imagen11.jpeg" alt="" class="img-responsive">
+                </a>
+                <p align="center" style="line-height= 10%" class="artist-mini-name">Manuel</p>
+                <p align="center" style="line-height= 10%">Bailar el viento</p>
+                <p align="center" style="line-height= 10%">Pos. Max 1</p>
+                <p align="center" style="line-height= 10%">50 sem. lista</p>
+                <p align="center" style="line-height= 10%" class="aritst-mini-position">11 Casilla</p>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb artist-mini">
+                <a href="http://venezuelawarez.co.ve/posts/Musica/555/BSO-Soy-Luna-2016-.html" class="thumbnail">
+                    <img src="./images/imagen12.jpeg" alt="" class="img-responsive">
+                </a>
+                <p align="center" style="line-height= 10%" class="artist-mini-name">B.S.O. Soy...</p>
+                <p align="center" style="line-height= 10%">Soy Luna</p>
+                <p align="center" style="line-height= 10%">Pos. Max 14</p>
+                <p align="center" style="line-height= 10%">2 sem. lista</p>
+                <p align="center" style="line-height= 10%" class="aritst-mini-position">12 Casilla</p>
+            </div>
+        </div>
 
-</div>
+    </div>
 </body>
+
 </html>
