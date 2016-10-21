@@ -29,56 +29,6 @@ ul{
 	padding-left: 50px ;
 	margin-bottom: 72px;
 }
-/*
-.row{
-	box-shadow: 0 1px 0 #e1e5e8;
-	padding-bottom :0;
-	padding-left: 15px;
-	background-color: #ffffff;
-	margin-bottom: 11px;
-}
-
-.row span{
-	padding: 20px 0 6px 0;
-}
-
-.checkoutlisthead{
-  padding: 0;
-  box-shadow: 0 0 0;
-}
-
-.checkoutlisthead span:first-child{
-  padding-left: 7px;
-}
-
-.checkoutlisthead span{
-  padding:0 21px 0 0;
-}
-
-.checkoutlisthead span:last-child{
-  float: right;
-  padding-right: 70px;
-}
-
-.quantity{
-  float: left;
-  padding-left: 5px;
-}
-
-.itemName{
-  float: left;
-  margin-left: 150px;
-}
-
-.price{
-  margin-right: 10px;
-}
-
-.order button{
-  padding: 20px 30px;
-  float: right;
-}
-*/
 
 .order{
   margin-left: -50px;

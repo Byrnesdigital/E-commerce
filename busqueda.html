@@ -4,21 +4,42 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <script src="./node_modules/jquery/dist/jquery.min.js" charset="utf-8"></script>
-  <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
-  <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js" charset="utf-8"></script>
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/main.css">
+  <script src="./js/jquery.min.js">
+  </script>
+  <script src="./js/bootstrap.min.js">
+  </script>
+  <script src="./js/main.js">
+  </script>
   <link rel="stylesheet" href="./css/main.css">
   <script src="./js/app.js" charset="utf-8"></script>
   <title>Music Store - Home</title>
 </head>
 <body>
   <nav>
-    <ul class="nav nav-tabs">
-      <li><a href="#">Home</a></li>
-      <li><a href="#">Search</a></li>
-      <li><a href="#">Shopping Cart</a></li>
-      <li></li>
-    </ul>
+  <ul class="nav nav-tabs">
+      <li><a href="">Home</a></li>
+      <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Artists
+  <span class="glyphicon glyphicon-menu-down"></span>
+  </a>
+          <ul class="dropdown-menu">
+              <li><a href="#">Shakira</a></li>
+              <li><a href="#">Adele</a></li>
+              <li><a href="#">Madonna</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="#">Justin Timberlake</a></li>
+              <li><a href="#">Bruno Mars</a></li>
+              <li><a href="#">Michael Jackson</a></li>
+          </ul>
+      </li>
+      <li><a href="">Shopping Cart</a></li>
+      <li><a href="">About Us</a></li>
+      <li><a href="">Contact</a></li>
+      <li><a href="#" data-toggle="modal" data-target="#login_modal"> Login </a> </li>
+      <li><a href="#"> Register </a></li>
+  </ul>
   </nav>
   <main>
     <div class="container-fluid">

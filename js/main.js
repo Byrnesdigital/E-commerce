@@ -17,20 +17,20 @@ document.addEventListener("DOMContentLoaded",function(event){//Una vez la págin
       document.querySelector("#artist-gallery").appendChild(element);
     });
   });
-  var number_order_button = document.querySelector("#num-order-button");//obtiene el botón de ordenar numericamente
-  number_order_button.addEventListener("click", function(){
-    document.querySelector("#artist-gallery").innerHTML = "";
-    list_gallery.sort(function(a,b){
-      if(a.querySelector(".artist-mini-position").textContent < b.querySelector(".artist-mini-position").textContent){
-        return -1;
-      }else if(a.querySelector(".artist-mini-position").textContent > b.querySelector(".artist-mini-position").textContent){
-        return 1;
-      }else{
-        return 0;
-      }
-    });
-    list_gallery.forEach(function(element ,index ,array){
-      document.querySelector("#artist-gallery").appendChild(element);
-    });
-  });
+  // var number_order_button = document.querySelector("#num-order-button");//obtiene el botón de ordenar numericamente
+  // number_order_button.addEventListener("click", function(){
+  //   document.querySelector("#artist-gallery").innerHTML = "";
+  //   list_gallery.sort(function(a,b){
+  //     if(a.querySelector(".artist-mini-position").textContent < b.querySelector(".artist-mini-position").textContent){
+  //       return -1;
+  //     }else if(a.querySelector(".artist-mini-position").textContent > b.querySelector(".artist-mini-position").textContent){
+  //       return 1;
+  //     }else{
+  //       return 0;
+  //     }
+  //   });
+  //   list_gallery.forEach(function(element ,index ,array){
+  //     document.querySelector("#artist-gallery").appendChild(element);
+  //   });
+  // });
 });
