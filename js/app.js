@@ -1,6 +1,7 @@
 const redirect_uri = "https://young-reef-87125.herokuapp.com/index.html";
 const client_secret = "";
 const client_id = "49c21ca8c1754ea7800c50be00dae758";
+const playlist_default = "02SelNGqy8Op0dqp1iXZtz";
 
 
 var sing = {};
@@ -18,6 +19,23 @@ var searchAlbums = function(query) {
     });
 };
 
+var getTracksByPlaylist = function(user_id,playlist_id,accessToken){
+  $.ajax({
+              url: 'https://api.spotify.com/v1/users/'+user_id+'/playlists/'+playlist_id+'/tracks',
+              headers: {
+                 'Authorization': 'Bearer ' + accessToken
+              },
+              method: 'GET',
+              success: function(response) {
+                console.log(response);
+              },
+              dataType: 'json',
+              error: function(e) {
+                  console.error(e);
+              }
+          });
+};
+
 function generateRandomString(length) {
     var text = '';
     var possible = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
@@ -25,7 +43,7 @@ function generateRandomString(length) {
       text += possible.charAt(Math.floor(Math.random() * possible.length));
     }
     return text;
-  };
+  }
 
 
 var getParamsURL = function () {
@@ -56,13 +74,13 @@ document.addEventListener("DOMContentLoaded",function(event){//Una vez la págin
 
   var params = getParamsURL();
   var access_token = params.access_token;
-  
+
   if(!access_token){
     authenticationAPI();
   }
 
   console.log(access_token)
-
+  getTracksByPlaylist("fabiing10",playlist_default,access_token);
 });
 
 /*
