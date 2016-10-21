@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="./node_modules/jquery/dist/jquery.min.js" charset="utf-8"></script>
+  <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js" charset="utf-8"></script>
+  <link rel="stylesheet" href="./css/scart.css">
+  <title>Shopping Cart</title>
+</head>
+<body>
+  <div class="container-fluid">
+    <div class="col-md-5 col-sm-12">
+      <h1>Your Shopping Cart</h1>
+      <p>Review your items, add and remove products, or adjust quantities</p>
+    </div>
+    <div class="col-md-7 col-sm-12 text-left">
+      <table class="table table-striped">
+        <tr class="checkout-head">
+          <th>Quantity</th>
+          <th>Item</th>
+          <th>Price</th>
+        </tr>
+        <tr class="product-list">
+          <td class="quantity">1</td>
+          <td class="itemName">Celine Deion's Greatest Hits</td>
+          <td class="itemPrice">$500,000,000 COP</td>
+          <td class="remove"><span class="glyphicon glyphicon-remove"></span></td>
+        </tr>
+        <tr class="product-list">
+          <td class="quantity">5</td>
+          <td class="itemName">Another Album</td>
+          <td class="itemPrice">$2,000,000 COP</td>
+          <td class="remove"><span class="glyphicon glyphicon-remove"></span></td>
+        </tr>
+        <tr class="totals">
+          <td class="item-total">Item Total: 6</td>
+          <td></td>
+          <td class="total-price">Total:$502,000,000 COP</td>
+          <td><input class="btn btn-default order"type="button" name="name" value="Order"></td>
+        </tr>
+      </table>
+
+
+      <!--<ul>
+        <li class="row list-inline checkoutlisthead">
+          <span>QTY</span>
+          <span>ITEM</span>
+          <span>PRICE</span>
+        </li>
+        <li class="row">
+          <span class="quantity">1</span>
+          <span class="itemName">Celine Deion's Greatest Hits</span>
+          <span class="price">$100,000,000COP</span>
+        </li>
+        <li class="row totals">
+          <span class="itemName"></span>
+          <span class="price">$100,000,000 COP</span>
+          <span class="order"><button class="btn btn-default"type="submit" name="button">ORDER</button></span>
+        </li>
+      </ul> !-->
+    </div>
+  </div>
+</body>
+</html>
