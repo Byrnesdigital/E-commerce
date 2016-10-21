@@ -25,6 +25,9 @@ var getTracksByPlaylist = function(user_id,playlist_id,accessToken){
               headers: {
                  'Authorization': 'Bearer ' + accessToken
               },
+              data:{
+                fields:items(tracks)
+              },
               method: 'GET',
               success: function(response) {
                 console.log(response);
