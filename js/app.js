@@ -56,7 +56,7 @@ var authenticationAPI = function(){
 
 
 document.addEventListener("DOMContentLoaded",function(event){//Una vez la página ha cargado.
-  authenticationAPI();
+  //authenticationAPI();
 });
 
 /*
