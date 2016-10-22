@@ -1,9 +1,44 @@
+/*da tamaño a la imagen del logo facebook*/
 #facebook {
   width: 60px;
   height: 40px;
   background: transparent;
 }
+/*da tamaño a la imagen de twitter*/
 #twitter {
   width: 40px;
   height: 40px;
+}
+/*Deja las estrellas de color gris inicialmente*/
+label{
+  color:grey;
+}
+/*Cambia el color de las estrellas cuando se pasa el cursor*/
+label:hover{
+  color:orange;
+}
+/*Cambia el color de todas las etiquetas precedidas a la que tiene el cursor*/
+label:hover ~ label{
+  color:orange;
+}
+/*esconde los botones de radio en el parrafo de estrellas*/
+input[type = "start"]{
+  display:none;
+}
+/*Al marcar el botón todas los label que le preceden se cambian a naranja*/
+input[type = "start"]:checked ~ label{
+  color:orange;
+}
+.clasificacion{
+      direction: rtl;/* cambia la dirección del texto de derecha a izquierda*/
+      unicode-bidi: bidi-override;/* cambia la dirección del texto*/
+}
+/*Cambiar el tamaño de la imagen de reproducir*/
+#reproducir {
+  width: 30px;
+  height: 30px;
+}
+#parar {
+  width: 30px;
+  height: 30px;
 }
