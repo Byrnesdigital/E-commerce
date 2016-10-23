@@ -33,12 +33,12 @@ document.addEventListener("DOMContentLoaded",function(event){//Una vez la págin
       document.querySelector("#artist-gallery").appendChild(element);
     });
   });
-  var play = document.querySelectorAll(".reproducir");
+  /*var play = document.querySelectorAll(".reproducir");
   play = Array.from(play);
   console.log("play:  "+play);
   play.forEach(function(element_li, index, array){
     element_li.addEventListener("click", function(){
       var repplay = document.getElementById("reproducir").play();
     });
-  });
+  });*/
 });
