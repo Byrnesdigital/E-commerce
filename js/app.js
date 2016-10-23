@@ -20,7 +20,7 @@ var searchAlbums = function(query) {
 };
 
 var getTracksByPlaylist = function(user_id,playlist_id,accessToken){
-    var params = "/?fields=items(track(name,href,album(name,href)))";
+    var params = "/?fields=items(track)";
     $.ajax({
         url: 'https://api.spotify.com/v1/users/'+user_id+'/playlists/'+playlist_id+'/tracks'+params,
         headers: {
