@@ -20,6 +20,7 @@ var searchAlbums = function(query) {
 };
 
 var getTracksByPlaylist = function(user_id,playlist_id,accessToken){
+
     $.ajax({
         url: 'https://api.spotify.com/v1/users/'+user_id+'/playlists/'+playlist_id+'/tracks',
         headers: {
@@ -34,6 +35,7 @@ var getTracksByPlaylist = function(user_id,playlist_id,accessToken){
             console.error(e);
         }
     });
+
 };
 
 function generateRandomString(length) {
