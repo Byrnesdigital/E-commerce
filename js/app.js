@@ -20,20 +20,20 @@ var searchAlbums = function(query) {
 };
 
 var getTracksByPlaylist = function(user_id,playlist_id,accessToken){
-  $.ajax({
-              url: 'https://api.spotify.com/v1/users/'+user_id+'/playlists/'+playlist_id+'/tracks',
-              headers: {
-                 'Authorization': 'Bearer ' + accessToken
-              },
-              method: 'GET',
-              success: function(response) {
-                console.log(response);
-              },
-              dataType: 'json',
-              error: function(e) {
-                  console.error(e);
-              }
-          });
+    $.ajax({
+        url: 'https://api.spotify.com/v1/users/'+user_id+'/playlists/'+playlist_id+'/tracks',
+        headers: {
+           'Authorization': 'Bearer ' + accessToken
+        },
+        method: 'GET',
+        success: function(response) {
+          console.log(response);
+        },
+        dataType: 'json',
+        error: function(e) {
+            console.error(e);
+        }
+    });
 };
 
 function generateRandomString(length) {
