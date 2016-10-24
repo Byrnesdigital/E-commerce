@@ -23,6 +23,13 @@ p.artist-data {
     width: 200px;
     margin: 0 auto;
 }
+.bold {
+    font-weight: bold;
+}
+.thumbnail {
+    display: block;
+}
+
 /*Deja las estrellas de color gris inicialmente*/
 label{
   color:grey;

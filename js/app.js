@@ -118,6 +118,11 @@ var getTracksByPlaylist = function(user_id,playlist_id,accessToken){
     if(!localStorage.getItem("tracks")){
       console.log("No database")
       for (var i =0; i < dataList.items.length; i++ ) {
+
+          //Definir Precio
+          var x = String((Math.random() * 3) + 0.5);
+          var price = x.substring(0,4);
+
           var newTrack = new Object();
           newTrack.track_id = dataList.items[i].track.id;
           newTrack.track_name = dataList.items[i].track.name;
@@ -129,6 +134,7 @@ var getTracksByPlaylist = function(user_id,playlist_id,accessToken){
           newTrack.artist_id = dataList.items[i].track.artists[0].id;
           newTrack.available = true;
           newTrack.available_cant = 10;
+          newTrack.price = price;
           console.log("Nombre => "+dataList.items[i].track.name+"Nombre => ");
           tracks_list.push(newTrack);
       }
@@ -203,8 +209,13 @@ document.addEventListener("DOMContentLoaded",function(event){//Una vez la págin
       dataResult.forEach(function(row,index){
           if(row.track_id == product_id){
             $('.artist').html(row.track_name);
-            $("#img-track").attr("src", row.image_album);
+            $(".img-track").attr("src", row.image_album);
             $("#audio").attr("src", row.preview_track);
+            $('.price').html(row.price);
+            $('#popularity').html(row.popularity_track);
+            $('#quantity').html(row.available_cant);
+            $('.orderbutton').attr("product-id",row.track_id);
+
           }
 
           //Create related tracks
