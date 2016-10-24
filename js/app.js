@@ -185,16 +185,16 @@ var authenticationAPI = function(){
 };
 
 
-document.addEventListener("DOMContentLoaded",function(event){//Una vez la página ha cargado.
+document.addEventListener("DOMContentLoaded",function(event){//Una vez la pÃ¡gina ha cargado.
 
   loadData();
 
   var tracks_buttons =  Array.from(document.querySelectorAll(".thumbnail"));
   var dataResult = JSON.parse(localStorage.getItem("tracks"));
-  //obtiene el botón de ordenar alfabeticamente
+  //obtiene el botÃ³n de ordenar alfabeticamente
   tracks_buttons.forEach(function(row,index){
 
-    row.addEventListener("click", function(){//evento del botón alfabetico
+    row.addEventListener("click", function(){//evento del botÃ³n alfabetico
 
       var option = new Object();
       option.operation = "productPage";
@@ -260,8 +260,8 @@ document.addEventListener("DOMContentLoaded",function(event){//Una vez la págin
 
   var list_gallery = document.querySelectorAll(".artist-mini");//obtiene todos los div con clase artist-mini
   list_gallery = Array.from(list_gallery);//vuelve una lista en arreglo
-  var aplha_order_button = document.querySelector("#alph-order-button");//obtiene el botón de ordenar alfabeticamente
-  aplha_order_button.addEventListener("click", function(){//evento del botón alfabetico
+  var aplha_order_button = document.querySelector("#alph-order-button");//obtiene el botÃ³n de ordenar alfabeticamente
+  aplha_order_button.addEventListener("click", function(){//evento del botÃ³n alfabetico
     document.querySelector("#artist-gallery").innerHTML = "";//Cambia la sintaxis HTML describiendo los descendientes del elemento
     list_gallery.sort(function(a,b){
       if(a.querySelector(".artist-mini-name").textContent < b.querySelector(".artist-mini-name").textContent){
@@ -273,12 +273,12 @@ document.addEventListener("DOMContentLoaded",function(event){//Una vez la págin
       }
     });
     list_gallery.forEach(function(element ,index ,array){
-      document.querySelector("#artist-gallery").appendChild(element);//Adiciona un nodo como último hijo de un nodo
+      document.querySelector("#artist-gallery").appendChild(element);//Adiciona un nodo como Ãºltimo hijo de un nodo
     });
   });
 
 
-  var number_order_button = document.querySelector("#num-order-button");//obtiene el botón de ordenar numericamente
+  var number_order_button = document.querySelector("#num-order-button");//obtiene el botÃ³n de ordenar numericamente
   number_order_button.addEventListener("click", function(){
     document.querySelector("#artist-gallery").innerHTML = "";
     list_gallery.sort(function(a,b){

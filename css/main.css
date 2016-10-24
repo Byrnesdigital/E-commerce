@@ -43,11 +43,11 @@ label:hover ~ label{
   color:orange;
 }
 /*esconde los botones de radio en el parrafo de estrellas*/
-input[type = "start"]{
+input[type = "radio"]{
   display:none;
 }
 /*Al marcar el botón todas los label que le preceden se cambian a naranja*/
-input[type = "start"]:checked ~ label{
+input[type = "radio"]:checked ~ label{
   color:orange;
 }
 .clasificacion{
@@ -62,4 +62,9 @@ input[type = "start"]:checked ~ label{
 #parar {
   width: 30px;
   height: 30px;
+}
+.list-inline > li {
+    display: inline-block;
+    padding-right: 0px;
+    padding-left: 100px;
 }
