@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,7 +12,6 @@
     <script src="./js/app.js"></script>
     <script src="./js/main.js"></script>
 </head>
-
 <body>
     <header>
         <h1>LISTADO DE MÚSICA</h1>
@@ -22,8 +20,8 @@
         <li><a href="">Home</a></li>
         <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Artists
-    <span class="glyphicon glyphicon-menu-down"></span>
-    </a>
+              <span class="glyphicon glyphicon-menu-down"></span>
+            </a>
             <ul class="dropdown-menu">
                 <li><a href="#">Shakira</a></li>
                 <li><a href="#">Adele</a></li>
@@ -67,28 +65,33 @@
                 <p align="center" style="line-height= 10%">Cantidades Disponibles:</p>
                 <p align="center" style="line-height= 10%" class="artist-mini-quantity">10</p>
                 <p align="center" class="clasificacion">
-                  <input type="start" name="estrellas" value="5">
+                  <input id="radio1" type="radio" name="estrellas" value="5">
                   <!--    -->
-                  <label>★</label>
-                  <input type="start" name="estrellas" value="4">
+                  <label for="radio1">★</label><!--For vincula la etiqueta label con el input -->
+                  <input id="radio2" type="radio" name="estrellas" value="4">
                   <!--    -->
-                  <label>★</label>
-                  <input type="start" name="estrellas" value="3">
+                  <label for="radio2">★</label>
+                  <input id="radio3" type="radio" name="estrellas" value="3">
                   <!--    -->
-                  <label>★</label>
-                  <input type="start" name="estrellas" value="2">
+                  <label for="radio3">★</label>
+                  <input id="radio4" type="radio" name="estrellas" value="2">
                   <!--    -->
-                  <label>★</label>
-                  <input type="start" name="estrellas" value="1">
+                  <label for="radio4">★</label>
+                  <input id="radio5" type="radio" name="estrellas" value="1">
                   <!--    -->
-                  <label>★</label>
+                  <label for="radio5">★</label>
                 </p>
-                <audio id="demo" src="audio.mp3" loop></audio>
-                <div>
-                  <img src="./images/reproducir.jpeg" alt="Reproducir" class="img-responsive reproducir" id="reproducir">
-                <div>
-                  <img src="./images/parar.jpeg" alt="Reproducir" class="img-responsive parar" id="parar">
-                </div>
+                <audio class="demo" src="audio.mp3" loop></audio>
+                <!--<audio controls="controls"><source src="./music/Miguel_Bose.mp3" type="audio/mp3"></audio>-->
+                  <audio src="./music/Miguel_Bose.mp3" class="audio" type="audio/mp3" id="audio">
+                    Tu navegador no es compatible
+                  </audio>
+                  <div id="reproductor">
+                    <button type="button" name="button" id="play">Reproducir</button>
+                    <button type="button" name="button" id="pause">Pause</button>
+                    <button type="button" name="button" id="stop">Stop</button>
+                    <p>Volumen: <input type="range" id="volume" step=".1" min="0" max="1" value="1"></p>
+                  </div>
             </div>
             <div class="col-lg-3 col-md-4 col-xs-6 thumb artist-mini">
                 <a href="http://www.danimartin.com.es/" class="thumbnail">
@@ -102,22 +105,32 @@
                 <p align="center" style="line-height= 10%">Cantidades Disponibles:</p>
                 <p align="center" style="line-height= 10%" class="artist-mini-quantity">10</p>
                 <p align="center" class="clasificacion">
-                  <input type="start" name="estrellas" value="5">
+                  <input id="radio6" type="radio" name="estrellas" value="5">
                   <!--    -->
-                  <label>★</label>
-                  <input type="start" name="estrellas" value="4">
+                  <label for="radio6">★</label><!--For vincula la etiqueta label con el input -->
+                  <input id="radio7" type="radio" name="estrellas" value="4">
                   <!--    -->
-                  <label>★</label>
-                  <input type="start" name="estrellas" value="3">
+                  <label for="radio7">★</label>
+                  <input id="radio8" type="radio" name="estrellas" value="3">
                   <!--    -->
-                  <label>★</label>
-                  <input type="start" name="estrellas" value="2">
+                  <label for="radio8">★</label>
+                  <input id="radio9" type="radio" name="estrellas" value="2">
                   <!--    -->
-                  <label>★</label>
-                  <input type="start" name="estrellas" value="1">
+                  <label for="radio9">★</label>
+                  <input id="radio10" type="radio" name="estrellas" value="1">
                   <!--    -->
-                  <label>★</label>
+                  <label for="radio10">★</label>
                 </p>
+                <!--<audio controls="controls"><source src="./music/Dani_Martín.mp3" type="audio/mp3"></audio>-->
+                  <audio src="./music/Dani_Martín.mp3" class="audio" type="audio/mp3" id="audio1">
+                    Tu navegador no es compatible
+                  </audio>
+                  <div id="reproductor1">
+                    <button type="button" name="button" id="play1">Reproducir</button>
+                    <button type="button" name="button" id="pause1">Pause</button>
+                    <button type="button" name="button" id="stop1">Stop</button>
+                    <p>Volumen: <input type="range" id="volume1" step=".1" min="0" max="1" value="1"></p>
+                  </div>
             </div>
             <div class="col-lg-3 col-md-4 col-xs-6 thumb artist-mini">
                 <a href="http://gratisdiscos.com/pop/jose-maria-ruiz-no-te-pido-mas-2016-320kbps-2.html" class="thumbnail">
@@ -131,22 +144,32 @@
                 <p align="center" style="line-height= 10%">Cantidades Disponibles:</p>
                 <p align="center" style="line-height= 10%" class="artist-mini-quantity">10</p>
                 <p align="center" class="clasificacion">
-                  <input type="start" name="estrellas" value="5">
+                  <input id="radio11" type="radio" name="estrellas" value="5">
                   <!--    -->
-                  <label>★</label>
-                  <input type="start" name="estrellas" value="4">
+                  <label for="radio11">★</label><!--For vincula la etiqueta label con el input -->
+                  <input id="radio12" type="radio" name="estrellas" value="4">
                   <!--    -->
-                  <label>★</label>
-                  <input type="start" name="estrellas" value="3">
+                  <label for="radio12">★</label>
+                  <input id="radio13" type="radio" name="estrellas" value="3">
                   <!--    -->
-                  <label>★</label>
-                  <input type="start" name="estrellas" value="2">
+                  <label for="radio13">★</label>
+                  <input id="radio14" type="radio" name="estrellas" value="2">
                   <!--    -->
-                  <label>★</label>
-                  <input type="start" name="estrellas" value="1">
+                  <label for="radio14">★</label>
+                  <input id="radio15" type="radio" name="estrellas" value="1">
                   <!--    -->
-                  <label>★</label>
+                  <label for="radio15">★</label>
                 </p>
+                <!--<audio controls="controls"><source src="./music/JOSE_RUIZ.mp3" type="audio/mp3"></audio>-->
+                  <audio src="./music/JOSE_RUIZ.mp3" class="audio" type="audio/mp3" id="audio2">
+                    Tu navegador no es compatible
+                  </audio>
+                  <div id="reproductor2">
+                    <button type="button" name="button" id="play2">Reproducir</button>
+                    <button type="button" name="button" id="pause2">Pause</button>
+                    <button type="button" name="button" id="stop2">Stop</button>
+                    <p>Volumen: <input type="range" id="volume2" step=".1" min="0" max="1" value="1"></p>
+                  </div>
             </div>
             <div class="col-lg-3 col-md-4 col-xs-6 thumb artist-mini">
                 <a href="https://www.abrahammateoofficial.com/2015/10/22/reserva-ya-are-you-ready-el-proximo-album-de-abraham-mateo/" class="thumbnail">
@@ -160,22 +183,32 @@
                 <p align="center" style="line-height= 10%">Cantidades Disponibles:</p>
                 <p align="center" style="line-height= 10%" class="artist-mini-quantity">10</p>
                 <p align="center" class="clasificacion">
-                  <input type="start" name="estrellas" value="5">
+                  <input id="radio16" type="radio" name="estrellas" value="5">
                   <!--    -->
-                  <label>★</label>
-                  <input type="start" name="estrellas" value="4">
+                  <label for="radio16">★</label><!--For vincula la etiqueta label con el input -->
+                  <input id="radio17" type="radio" name="estrellas" value="4">
                   <!--    -->
-                  <label>★</label>
-                  <input type="start" name="estrellas" value="3">
+                  <label for="radio17">★</label>
+                  <input id="radio18" type="radio" name="estrellas" value="3">
                   <!--    -->
-                  <label>★</label>
-                  <input type="start" name="estrellas" value="2">
+                  <label for="radio18">★</label>
+                  <input id="radio19" type="radio" name="estrellas" value="2">
                   <!--    -->
-                  <label>★</label>
-                  <input type="start" name="estrellas" value="1">
+                  <label for="radio19">★</label>
+                  <input id="radio20" type="radio" name="estrellas" value="1">
                   <!--    -->
-                  <label>★</label>
+                  <label for="radio20">★</label>
                 </p>
+                <!--<audio controls="controls"><source src="./music/Abraham_Mateo.mp3" type="audio/mp3"></audio>-->
+                  <audio src="./music/Abraham_Mateo.mp3" class="audio" type="audio/mp3" id="audio3">
+                    Tu navegador no es compatible
+                  </audio>
+                  <div id="reproductor3">
+                    <button type="button" name="button" id="play3">Reproducir</button>
+                    <button type="button" name="button" id="pause3">Pause</button>
+                    <button type="button" name="button" id="stop3">Stop</button>
+                    <p>Volumen: <input type="range" id="volume3" step=".1" min="0" max="1" value="1"></p>
+                  </div>
             </div>
             <div class="col-lg-3 col-md-4 col-xs-6 thumb artist-mini">
                 <a href="https://es-la.facebook.com/KaseOficial/" class="thumbnail">
@@ -189,22 +222,32 @@
                 <p align="center" style="line-height= 10%">Cantidades Disponibles:</p>
                 <p align="center" style="line-height= 10%" class="artist-mini-quantity">10</p>
                 <p align="center" class="clasificacion">
-                  <input type="start" name="estrellas" value="5">
+                  <input id="radio21" type="radio" name="estrellas" value="5">
                   <!--    -->
-                  <label>★</label>
-                  <input type="start" name="estrellas" value="4">
+                  <label for="radio21">★</label><!--For vincula la etiqueta label con el input -->
+                  <input id="radio22" type="radio" name="estrellas" value="4">
                   <!--    -->
-                  <label>★</label>
-                  <input type="start" name="estrellas" value="3">
+                  <label for="radio22">★</label>
+                  <input id="radio23" type="radio" name="estrellas" value="3">
                   <!--    -->
-                  <label>★</label>
-                  <input type="start" name="estrellas" value="2">
+                  <label for="radio23">★</label>
+                  <input id="radio24" type="radio" name="estrellas" value="2">
                   <!--    -->
-                  <label>★</label>
-                  <input type="start" name="estrellas" value="1">
+                  <label for="radio24">★</label>
+                  <input id="radio25" type="radio" name="estrellas" value="1">
                   <!--    -->
-                  <label>★</label>
+                  <label for="radio25">★</label>
                 </p>
+                <!--<audio controls="controls"><source src="./music/KASE_O.mp3" type="audio/mp3"></audio>-->
+                  <audio src="./music/KASE_O.mp3" class="audio" type="audio/mp3" id="audio4">
+                    Tu navegador no es compatible
+                  </audio>
+                  <div id="reproductor4">
+                    <button type="button" name="button" id="play4">Reproducir</button>
+                    <button type="button" name="button" id="pause4">Pause</button>
+                    <button type="button" name="button" id="stop4">Stop</button>
+                    <p>Volumen: <input type="range" id="volume4" step=".1" min="0" max="1" value="1"></p>
+                  </div>
             </div>
             <div class="col-lg-3 col-md-4 col-xs-6 thumb artist-mini">
                 <a href="http://store.greenday.com/" class="thumbnail">
@@ -218,22 +261,32 @@
                 <p align="center" style="line-height= 10%">Cantidades Disponibles:</p>
                 <p align="center" style="line-height= 10%" class="artist-mini-quantity">10</p>
                 <p align="center" class="clasificacion">
-                  <input type="start" name="estrellas" value="5">
+                  <input id="radio26" type="radio" name="estrellas" value="5">
                   <!--    -->
-                  <label>★</label>
-                  <input type="start" name="estrellas" value="4">
+                  <label for="radio26">★</label><!--For vincula la etiqueta label con el input -->
+                  <input id="radio27" type="radio" name="estrellas" value="4">
                   <!--    -->
-                  <label>★</label>
-                  <input type="start" name="estrellas" value="3">
+                  <label for="radio27">★</label>
+                  <input id="radio28" type="radio" name="estrellas" value="3">
                   <!--    -->
-                  <label>★</label>
-                  <input type="start" name="estrellas" value="2">
+                  <label for="radio28">★</label>
+                  <input id="radio29" type="radio" name="estrellas" value="2">
                   <!--    -->
-                  <label>★</label>
-                  <input type="start" name="estrellas" value="1">
+                  <label for="radio29">★</label>
+                  <input id="radio30" type="radio" name="estrellas" value="1">
                   <!--    -->
-                  <label>★</label>
+                  <label for="radio30">★</label>
                 </p>
+                <!--<audio controls="controls"><source src="./music/Green_Day.mp3" type="audio/mp3"></audio>-->
+                  <audio src="./music/Green_Day.mp3" class="audio" type="audio/mp3" id="audio5">
+                    Tu navegador no es compatible
+                  </audio>
+                  <div id="reproductor5">
+                    <button type="button" name="button" id="play5">Reproducir</button>
+                    <button type="button" name="button" id="pause5">Pause</button>
+                    <button type="button" name="button" id="stop5">Stop</button>
+                    <p>Volumen: <input type="range" id="volume5" step=".1" min="0" max="1" value="1"></p>
+                  </div>
             </div>
             <div class="col-lg-3 col-md-4 col-xs-6 thumb artist-mini">
                 <a href="https://twitter.com/gemeliersmusic?lang=es" class="thumbnail">
@@ -247,22 +300,32 @@
                 <p align="center" style="line-height= 10%">Cantidades Disponibles:</p>
                 <p align="center" style="line-height= 10%" class="artist-mini-quantity">10</p>
                 <p align="center" class="clasificacion">
-                  <input type="start" name="estrellas" value="5">
+                  <input id="radio31" type="radio" name="estrellas" value="5">
                   <!--    -->
-                  <label>★</label>
-                  <input type="start" name="estrellas" value="4">
+                  <label for="radio31">★</label><!--For vincula la etiqueta label con el input -->
+                  <input id="radio32" type="radio" name="estrellas" value="4">
                   <!--    -->
-                  <label>★</label>
-                  <input type="start" name="estrellas" value="3">
+                  <label for="radio32">★</label>
+                  <input id="radio33" type="radio" name="estrellas" value="3">
                   <!--    -->
-                  <label>★</label>
-                  <input type="start" name="estrellas" value="2">
+                  <label for="radio33">★</label>
+                  <input id="radio34" type="radio" name="estrellas" value="2">
                   <!--    -->
-                  <label>★</label>
-                  <input type="start" name="estrellas" value="1">
+                  <label for="radio34">★</label>
+                  <input id="radio35" type="radio" name="estrellas" value="1">
                   <!--    -->
-                  <label>★</label>
+                  <label for="radio35">★</label>
                 </p>
+                <!--<audio controls="controls"><source src="./music/Gemeliers.mp3" type="audio/mp3"></audio>-->
+                  <audio src="./music/Gemeliers.mp3" class="audio" type="audio/mp3" id="audio7">
+                    Tu navegador no es compatible
+                  </audio>
+                  <div id="reproductor7">
+                    <button type="button" name="button" id="play7">Reproducir</button>
+                    <button type="button" name="button" id="pause7">Pause</button>
+                    <button type="button" name="button" id="stop7">Stop</button>
+                    <p>Volumen: <input type="range" id="volume7" step=".1" min="0" max="1" value="1"></p>
+                  </div>
             </div>
             <div class="col-lg-3 col-md-4 col-xs-6 thumb artist-mini">
                 <a href="http://www.m-clan.tv/" class="thumbnail">
@@ -276,22 +339,32 @@
                 <p align="center" style="line-height= 10%">Cantidades Disponibles:</p>
                 <p align="center" style="line-height= 10%" class="artist-mini-quantity">10</p>
                 <p align="center" class="clasificacion">
-                  <input type="start" name="estrellas" value="5">
+                  <input id="radio36" type="radio" name="estrellas" value="5">
                   <!--    -->
-                  <label>★</label>
-                  <input type="start" name="estrellas" value="4">
+                  <label for="radio36">★</label><!--For vincula la etiqueta label con el input -->
+                  <input id="radio37" type="radio" name="estrellas" value="4">
                   <!--    -->
-                  <label>★</label>
-                  <input type="start" name="estrellas" value="3">
+                  <label for="radio37">★</label>
+                  <input id="radio38" type="radio" name="estrellas" value="3">
                   <!--    -->
-                  <label>★</label>
-                  <input type="start" name="estrellas" value="2">
+                  <label for="radio38">★</label>
+                  <input id="radio39" type="radio" name="estrellas" value="2">
                   <!--    -->
-                  <label>★</label>
-                  <input type="start" name="estrellas" value="1">
+                  <label for="radio39">★</label>
+                  <input id="radio40" type="radio" name="estrellas" value="1">
                   <!--    -->
-                  <label>★</label>
+                  <label for="radio40">★</label>
                 </p>
+                <!--<audio controls="controls"><source src="./music/M_Clan.mp3" type="audio/mp3"></audio>-->
+                  <audio src="./music/M_Clan.mp3" class="audio" type="audio/mp3" id="audio8">
+                    Tu navegador no es compatible
+                  </audio>
+                  <div id="reproductor8">
+                    <button type="button" name="button" id="play8">Reproducir</button>
+                    <button type="button" name="button" id="pause8">Pause</button>
+                    <button type="button" name="button" id="stop8">Stop</button>
+                    <p>Volumen: <input type="range" id="volume8" step=".1" min="0" max="1" value="1"></p>
+                  </div>
             </div>
             <div class="col-lg-3 col-md-4 col-xs-6 thumb artist-mini">
                 <a href="http://brucespringsteen.net/news/2016/companion-album-to-bruce-springsteens-autobiography-includes-5-unreleased-tracks" class="thumbnail">
@@ -305,22 +378,32 @@
                 <p align="center" style="line-height= 10%">Cantidades Disponibles:</p>
                 <p align="center" style="line-height= 10%" class="artist-mini-quantity">10</p>
                 <p align="center" class="clasificacion">
-                  <input type="start" name="estrellas" value="5">
+                  <input id="radio41" type="radio" name="estrellas" value="5">
                   <!--    -->
-                  <label>★</label>
-                  <input type="start" name="estrellas" value="4">
+                  <label for="radio41">★</label><!--For vincula la etiqueta label con el input -->
+                  <input id="radio42" type="radio" name="estrellas" value="4">
                   <!--    -->
-                  <label>★</label>
-                  <input type="start" name="estrellas" value="3">
+                  <label for="radio42">★</label>
+                  <input id="radio43" type="radio" name="estrellas" value="3">
                   <!--    -->
-                  <label>★</label>
-                  <input type="start" name="estrellas" value="2">
+                  <label for="radio43">★</label>
+                  <input id="radio44" type="radio" name="estrellas" value="2">
                   <!--    -->
-                  <label>★</label>
-                  <input type="start" name="estrellas" value="1">
+                  <label for="radio44">★</label>
+                  <input id="radio45" type="radio" name="estrellas" value="1">
                   <!--    -->
-                  <label>★</label>
+                  <label for="radio45">★</label>
                 </p>
+                <!--<audio controls="controls"><source src="./music/Bruce_Springsteen.mp3" type="audio/mp3"></audio>-->
+                  <audio src="./music/Bruce_Springsteen.mp3" class="audio" type="audio/mp3" id="audio9">
+                    Tu navegador no es compatible
+                  </audio>
+                  <div id="reproductor9">
+                    <button type="button" name="button" id="play9">Reproducir</button>
+                    <button type="button" name="button" id="pause9">Pause</button>
+                    <button type="button" name="button" id="stop9">Stop</button>
+                    <p>Volumen: <input type="range" id="volume9" step=".1" min="0" max="1" value="1"></p>
+                  </div>
             </div>
             <div class="col-lg-3 col-md-4 col-xs-6 thumb artist-mini">
                 <a href="http://www.vanmorrison.com/splash/" class="thumbnail">
@@ -334,22 +417,32 @@
                 <p align="center" style="line-height= 10%">Cantidades Disponibles:</p>
                 <p align="center" style="line-height= 10%" class="artist-mini-quantity">10</p>
                 <p align="center" class="clasificacion">
-                  <input type="start" name="estrellas" value="5">
+                  <input id="radio46" type="radio" name="estrellas" value="5">
                   <!--    -->
-                  <label>★</label>
-                  <input type="start" name="estrellas" value="4">
+                  <label for="radio46">★</label><!--For vincula la etiqueta label con el input -->
+                  <input id="radio47" type="radio" name="estrellas" value="4">
                   <!--    -->
-                  <label>★</label>
-                  <input type="start" name="estrellas" value="3">
+                  <label for="radio47">★</label>
+                  <input id="radio48" type="radio" name="estrellas" value="3">
                   <!--    -->
-                  <label>★</label>
-                  <input type="start" name="estrellas" value="2">
+                  <label for="radio48">★</label>
+                  <input id="radio49" type="radio" name="estrellas" value="2">
                   <!--    -->
-                  <label>★</label>
-                  <input type="start" name="estrellas" value="1">
+                  <label for="radio49">★</label>
+                  <input id="radio50" type="radio" name="estrellas" value="1">
                   <!--    -->
-                  <label>★</label>
+                  <label for="radio50">★</label>
                 </p>
+                <!--<audio controls="controls"><source src="./music/Van_Morrison.mp3" type="audio/mp3"></audio>-->
+                  <audio src="./music/Van_Morrison.mp3" class="audio" type="audio/mp3" id="audio10">
+                    Tu navegador no es compatible
+                  </audio>
+                  <div id="reproductor10">
+                    <button type="button" name="button" id="play10">Reproducir</button>
+                    <button type="button" name="button" id="pause10">Pause</button>
+                    <button type="button" name="button" id="stop10">Stop</button>
+                    <p>Volumen: <input type="range" id="volume10" step=".1" min="0" max="1" value="1"></p>
+                  </div>
             </div>
             <div class="col-lg-3 col-md-4 col-xs-6 thumb artist-mini">
                 <a href="http://www.manuelcarrasco.es/" class="thumbnail">
@@ -363,22 +456,32 @@
                 <p align="center" style="line-height= 10%">Cantidades Disponibles:</p>
                 <p align="center" style="line-height= 10%" class="artist-mini-quantity">10</p>
                 <p align="center" class="clasificacion">
-                  <input type="start" name="estrellas" value="5">
+                  <input id="radio51" type="radio" name="estrellas" value="5">
                   <!--    -->
-                  <label>★</label>
-                  <input type="start" name="estrellas" value="4">
+                  <label for="radio51">★</label><!--For vincula la etiqueta label con el input -->
+                  <input id="radio52" type="radio" name="estrellas" value="4">
                   <!--    -->
-                  <label>★</label>
-                  <input type="start" name="estrellas" value="3">
+                  <label for="radio52">★</label>
+                  <input id="radio53" type="radio" name="estrellas" value="3">
                   <!--    -->
-                  <label>★</label>
-                  <input type="start" name="estrellas" value="2">
+                  <label for="radio53">★</label>
+                  <input id="radio54" type="radio" name="estrellas" value="2">
                   <!--    -->
-                  <label>★</label>
-                  <input type="start" name="estrellas" value="1">
+                  <label for="radio54">★</label>
+                  <input id="radio55" type="radio" name="estrellas" value="1">
                   <!--    -->
-                  <label>★</label>
+                  <label for="radio55">★</label>
                 </p>
+                <!--<audio controls="controls"><source src="./music/Manuel.mp3" type="audio/mp3"></audio>-->
+                  <audio src="./music/Manuel.mp3" class="audio" type="audio/mp3" id="audio11">
+                    Tu navegador no es compatible
+                  </audio>
+                  <div id="reproductor11">
+                    <button type="button" name="button" id="play11">Reproducir</button>
+                    <button type="button" name="button" id="pause11">Pause</button>
+                    <button type="button" name="button" id="stop11">Stop</button>
+                    <p>Volumen: <input type="range" id="volume11" step=".1" min="0" max="1" value="1"></p>
+                  </div>
             </div>
             <div class="col-lg-3 col-md-4 col-xs-6 thumb artist-mini">
                 <a href="http://venezuelawarez.co.ve/posts/Musica/555/BSO-Soy-Luna-2016-.html" class="thumbnail">
@@ -392,24 +495,33 @@
                 <p align="center" style="line-height= 10%">Cantidades Disponibles:</p>
                 <p align="center" style="line-height= 10%" class="artist-mini-quantity">10</p>
                 <p align="center" class="clasificacion">
-                  <input type="start" name="estrellas" value="5">
+                  <input id="radio56" type="radio" name="estrellas" value="5">
                   <!--    -->
-                  <label>★</label>
-                  <input type="start" name="estrellas" value="4">
+                  <label for="radio56">★</label><!--For vincula la etiqueta label con el input -->
+                  <input id="radio57" type="radio" name="estrellas" value="4">
                   <!--    -->
-                  <label>★</label>
-                  <input type="start" name="estrellas" value="3">
+                  <label for="radio57">★</label>
+                  <input id="radio58" type="radio" name="estrellas" value="3">
                   <!--    -->
-                  <label>★</label>
-                  <input type="start" name="estrellas" value="2">
+                  <label for="radio58">★</label>
+                  <input id="radio59" type="radio" name="estrellas" value="2">
                   <!--    -->
-                  <label>★</label>
-                  <input type="start" name="estrellas" value="1">
+                  <label for="radio59">★</label>
+                  <input id="radio60" type="radio" name="estrellas" value="1">
                   <!--    -->
-                  <label>★</label>
+                  <label for="radio60">★</label>
                 </p>
+                <!--<audio controls="controls"><source src="./music/Soy.mp3" type="audio/mp3"></audio>-->
+                  <audio src="./music/Soy.mp3" class="audio" type="audio/mp3" id="audio12">
+                    Tu navegador no es compatible
+                  </audio>
+                  <div id="reproductor12">
+                    <button type="button" name="button" id="play12">Reproducir</button>
+                    <button type="button" name="button" id="pause12">Pause</button>
+                    <button type="button" name="button" id="stop12">Stop</button>
+                    <p>Volumen: <input type="range" id="volume12" step=".1" min="0" max="1" value="1"></p>
+                  </div>
             </div>
-        </div>
     </div>
   </div>
     <footer class="bs-footer" role="contentinfo">

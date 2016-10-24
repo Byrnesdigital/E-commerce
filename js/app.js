@@ -1,4 +1,4 @@
-const redirect_uri = "https://young-reef-87125.herokuapp.com/index.html";
+/*const redirect_uri = "https://young-reef-87125.herokuapp.com/index.html";
 const client_secret = "";
 const client_id = "49c21ca8c1754ea7800c50be00dae758";
 const playlist_default = "02SelNGqy8Op0dqp1iXZtz";
