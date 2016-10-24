@@ -13,7 +13,7 @@
     <script type="text/javascript">
       document.addEventListener("DOMContentLoaded",function(event){
         var option_redirect = {operation:"pageStatus",nameProcess:"pageStatus"};
-        processInLocalStorage("product",option_redirect);
+        processInLocalStorage("Shopping",option_redirect);
       });
     </script>
     <script src="./js/app.js"></script>
@@ -27,41 +27,22 @@
       <li><a href="index.html">Home</a></li>
       <li><a href="shopping.html">Shopping Cart</a></li>
     </ul>
-    <div class="container-fluid" id="product-page">
-      <div class="row">
-        <div class="col-lg-12">
-          <h1 class="page-header artist" <small class="album"></small>
-          </h1>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-4">
-          <a href="#"><img class="img-responsive img-track" src="" alt="placeholder"></a>
-        </div>
-        <div class="col-md-8">
-          <h3>Preview</h3>
-          <audio src="" class="audio" type="audio/mp3" id="audio">
-            Tu navegador no es compatible
-          </audio>
-          <div id="reproductor">
-            <button type="button" name="button" id="play">Reproducir</button>
-            <button type="button" name="button" id="pause">Pause</button>
-            <button type="button" name="button" id="stop">Stop</button>
 
-          </div>
-          <h3>Detalles del producto</h3>
-          <ul>
-            <li class="price-detail">Precio: $<span class="price"></span>(USD)</li>
-            <li class="available-detail">Cantidad Disponible: <span id="quantity"></span></li>
-            <li>Valoracion:<span id="popularity"></span></li>
-          </ul>
-          <a class="btn btn-default orderbutton" href="#" role="button" product-id="" data-toggle="modal" data-target="#myModal">Comprar</a>
-        </div>
+    <div class="container-fluid">
+      <div class="col-md-5 col-sm-12">
+
       </div>
-      <div class="row" id="relacionados">
-        <div class="col-lg-12">
-          <h3 class="page-header">Otras Canciones</h3>
-        </div>
+      <div class="col-md-7 col-sm-12 text-left">
+        <table class="table table-striped" id="shopping_table">
+          <tr class="checkout-head">
+            <th>Cantidad</th>
+            <th>Item</th>
+            <th>Precio</th>
+            <th>Remove</th>
+          </tr>
+        </table>
+
+
       </div>
     </div>
 
@@ -73,15 +54,13 @@
       <div class="modal-content">
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h4 class="modal-title">Comprar Cancion</h4>
+          <h4 class="modal-title">Comprar</h4>
         </div>
         <div class="modal-body">
             <div class="row">
-              <div class="col-lg-3">
-                <img class="img-responsive img-track" src="" alt="placeholder">
-              </div>
+
               <div class="col-lg-9">
-                <p class="info-box">Esta a punto de añadir al carro de compras la cancion. <span class="artist bold"></span> por un valor de $<span class="price bold"></span></p>
+                <p class="info-box">Esta a punto de realizar una compra por <span class="valor"></span>. ¿Desea realizar efectiva la compra?</p>
               </div>
             </div>
 
@@ -90,16 +69,15 @@
         </div>
 
         <div class="modal-footer">
-            <a type="button" class="btn btn-default view-product" style="display:none;" href="shopping.html">Ver carro de compras</a>
-            <button type="button" class="btn btn-default add-product" product-id>Añadir al carro</button>
-            <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
+            <a type="button" class="btn btn-default buy-product">Comprar</a>
+
+            <button type="button" class="btn btn-danger" data-dismiss="modal">Cancelar</button>
 
         </div>
       </div>
 
     </div>
   </div>
-
 
     <footer class="bs-footer" role="contentinfo">
       <div class="container">
