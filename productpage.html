@@ -24,32 +24,34 @@
         <img src="./images/logo_ms.jpg" class="logo" />
     </header>
     <ul class="nav nav-tabs">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="shopping.html">Shopping Cart</a></li>
+        <li><a href="index.html"><span class="glyphicon glyphicon-th" aria-hidden="true"></span></a></li>
+        <li><a href="shopping.html"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span></a></li>
     </ul>
     <div class="container-fluid" id="product-page">
       <div class="row">
         <div class="col-lg-12">
-          <h1 class="page-header artist" <small class="album"></small>
-          </h1>
+          <h1 class="page-header artist"> <small class="album"></small></h1>
         </div>
       </div>
       <div class="row">
+        <div class="col-md-1">
+
+        </div>
         <div class="col-md-4">
           <a href="#"><img class="img-responsive img-track" src="" alt="placeholder"></a>
         </div>
-        <div class="col-md-8">
-          <h3>Preview</h3>
+        <div class="col-md-6">
+          <h3 class="bar-nav">Preview</h3>
           <audio src="" class="audio" type="audio/mp3" id="audio">
             Tu navegador no es compatible
           </audio>
           <div id="reproductor">
-            <button type="button" name="button" id="play">Reproducir</button>
-            <button type="button" name="button" id="pause">Pause</button>
-            <button type="button" name="button" id="stop">Stop</button>
+            <button type="button" name="button" id="play"><span class="glyphicon glyphicon-play" aria-hidden="true"></span></button>
+            <button type="button" name="button" id="pause"><span class="glyphicon glyphicon-pause" aria-hidden="true"></span></button>
+            <button type="button" name="button" id="stop"><span class="glyphicon glyphicon-stop" aria-hidden="true"></span></button>
 
           </div>
-          <h3>Detalles del producto</h3>
+          <h3 class="bar-nav">Detalles del producto</h3>
           <ul>
             <li class="price-detail">Precio: $<span class="price"></span>(USD)</li>
             <li class="available-detail">Cantidad Disponible: <span id="quantity"></span></li>
@@ -90,7 +92,7 @@
         </div>
 
         <div class="modal-footer">
-            <a type="button" class="btn btn-default view-product" style="display:none;" href="shopping.html">Ver carro de compras</a>
+            <a type="button" class="btn btn-default view-product" style="display:none;" href="shopping.html"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>Ver carro de compras</a>
             <button type="button" class="btn btn-default add-product" product-id>Añadir al carro</button>
             <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
 
@@ -103,18 +105,7 @@
 
     <footer class="bs-footer" role="contentinfo">
       <div class="container">
-        <ul class="list-unstyled">
-          <li class="col-md-1">
-            <a href="#" class="redes">
-              <img src="./images/facebook_logow.jpg" alt="Facebook" id="facebook">
-            </a>
-          </li>
-          <li class="col-md-1">
-            <a href="#" class="redes">
-              <img src="./images/twitter-logo.jpg" alt="Twitter" id="twitter">
-            </a>
-          </li>
-        </ul>
+
         <p>
           Musica Capital College © 2016
           <a href="https://bootcamp-2.slack.com/team/caroninorivera" target="_blank">Carolina Niño</a>

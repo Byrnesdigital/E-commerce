@@ -1,14 +1,25 @@
 /*da tamaño a la imagen del logo facebook*/
-#facebook {
-  width: 60px;
-  height: 40px;
-  background: transparent;
+button {
+    background: white;
+    border: 1px solid gray;
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
+}
+p.artist-mini-position {
+    display: none;
+}
+.artist-mini {
+    height: 350px;
+}
+.carousel-inner>.item>a>img, .carousel-inner>.item>img, .img-responsive, .thumbnail a>img, .thumbnail>img {
+    border-radius: 100%;
+}
+h1.page-header.artist {
+    text-align: center;
 }
 /*da tamaño a la imagen de twitter*/
-#twitter {
-  width: 40px;
-  height: 40px;
-}
+
 p.artist-data {
     text-align: center;
     margin-top: 15px;
@@ -20,7 +31,7 @@ p.artist-data {
 }
 .nav-tabs {
     border-bottom: 1px solid #ddd;
-    width: 200px;
+    width: 220px;
     margin: 0 auto;
 }
 .bold {
@@ -33,6 +44,7 @@ td, th {
     padding: 0;
     text-align: center;
 }
+
 .thumbnail {
     display: block;
 }
@@ -74,4 +86,57 @@ input[type = "radio"]:checked ~ label{
     display: inline-block;
     padding-right: 0px;
     padding-left: 100px;
+}
+p.success-box {
+    background-color: rgba(38, 150, 206, 0.68);
+    padding: 9%;
+    color: white;
+    font-size: 19px;
+    text-align: center;
+    font-weight: 100;
+}
+li span.glyphicon {
+    font-size: 20px;
+}
+.nav-tabs>li>a {
+    margin-right: 2px;
+    line-height: 1.42857143;
+    border: 1px solid transparent;
+    border-radius: 4px 4px 0 0;
+    border-radius: 100%;
+    height: 44px;
+    margin-bottom: 25px;
+}
+.view-product {
+    width: 100%;
+    padding: 11px 0px;
+    font-size: 16px;
+    display: block;
+    font-weight: 100;
+}
+.add-product {
+    width: 100%;
+}
+.btn-danger {
+    width: 100%;
+}
+.buy-product{
+  width: 100%;
+}
+.view-product {
+    width: 100%;
+    padding: 20px 0px;
+}
+.glyphicon-shopping-cart {
+    display: block;
+}
+footer.bs-footer {
+    background: url(http://subtlepatterns2015.subtlepatterns.netdna-cdn.com/patterns/sayagata-400px.png);
+    padding: 50px;
+}
+.bar-nav {
+    background: url(http://subtlepatterns2015.subtlepatterns.netdna-cdn.com/patterns/footer_lodyas.png);
+    padding: 10px;
+    color: white;
+    font-weight: 100;
 }
