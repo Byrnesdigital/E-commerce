@@ -31,7 +31,7 @@ p.artist-data {
 }
 .nav-tabs {
     border-bottom: 1px solid #ddd;
-    width: 220px;
+    width: 230px;
     margin: 0 auto;
 }
 .bold {
@@ -106,6 +106,7 @@ li span.glyphicon {
     border-radius: 100%;
     height: 44px;
     margin-bottom: 25px;
+    color: #3c1073;
 }
 .view-product {
     width: 100%;
@@ -128,7 +129,8 @@ li span.glyphicon {
     padding: 20px 0px;
 }
 .glyphicon-shopping-cart {
-    display: block;
+    margin-right: 12px;
+    font-size: 15px;
 }
 footer.bs-footer {
     background: url(http://subtlepatterns2015.subtlepatterns.netdna-cdn.com/patterns/sayagata-400px.png);
